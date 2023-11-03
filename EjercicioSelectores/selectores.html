@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de tabla HTML</title>
+    <style> 
+        thead>tr, tfoot>tr{
+            background-color: brown;
+            color: white;
+            text-transform: uppercase;
+        }
+        td:last-child {
+            font-weight: bold;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: rgb(28,76,150);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <td>Concepto</td>
+            <td>Primer trimestre</td>
+            <td>Segundo trimestre</td>
+            <td>Total</td>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td>Tecnología</td>
+            <td>1300</td>
+            <td>1950</td>
+            <td>3050</td>
+        </tr>
+        <tr>
+            <td>Alimentación</td>
+            <td>1570</td>
+            <td>1850</td>
+            <td>2950</td>
+        </tr>
+        <tr>
+            <td>Deporte</td>
+            <td>1500</td>
+            <td>1750</td>
+            <td>3250</td>
+        </tr>
+        <tr>
+            <td>Viajes</td>
+            <td>1500</td>
+            <td>1750</td>
+            <td>3250</td>
+        </tr>
+        <tr>
+            <td>Papeleróan</td>
+            <td>1500</td>
+            <td>1750</td>
+            <td>3250</td>
+        </tr>
+        <tr>
+            <td>Alimentación</td>
+            <td>1500</td>
+            <td>1750</td>
+            <td>3250</td>
+        </tr>
+    </tbody>
+    <tfoot>
+           <tr>
+            <td>Total</td>
+            <td>0</td>
+            <td>00</td>
+            <td>0</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
