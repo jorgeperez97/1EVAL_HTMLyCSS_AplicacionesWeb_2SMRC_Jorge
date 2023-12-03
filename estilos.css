@@ -1,0 +1,11 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+div {
+    border: black 3px solid;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 10px;
+}
