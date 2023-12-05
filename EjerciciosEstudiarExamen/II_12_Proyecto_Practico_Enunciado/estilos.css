@@ -1,0 +1,186 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+    
+}
+
+body {
+  color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+nav,.container,footer { /* Esto es para que la página esté bajo estos bordes*/
+  max-width: 1000px;
+  min-width: 500px;
+  margin:0px auto;
+}
+
+
+nav {
+  background-color: blue;
+  color: pink;
+  font-size: large;
+  padding: 20px;
+  position: sticky;
+  overflow-y: auto; /* Esto sirve para cuando el contenido se sale del div*/ 
+  top: 0px;
+  z-index: 100;
+}
+
+nav div {
+  float: left;
+  margin-left: 20px;
+  padding: 0px;
+  margin-top: -10px;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+ /* Fondo cabecera*/
+header img { 
+  opacity: 0.7;
+  width: 90%;
+}
+
+aside {
+  background-color: lightblue;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 35%;
+  text-align: center;
+  top: 35%;
+  width: 25%;
+
+}
+
+aside a {
+  background-color: pink;
+  border-radius: 10px;
+  color: white;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+aside h3 {
+  margin: 20px;
+}
+
+/* Parte de 3 imagenes webinars */
+main {
+  margin: 0px auto;
+  width: 80%;
+}
+main h1 {
+  text-align: center;
+}
+
+/* Línea separados de elementos */
+main h1::after, main:after {
+  background-color: red;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 40%;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* Estilos objetos */
+.objetos {
+  overflow-y: auto;
+}
+.objetos .objeto {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 33%;
+}
+
+.objetos .objeto img {
+  width: 50%;
+}
+
+
+/* Sección de la botella y los 3 parrafos*/
+.botella { /* Esto es la sección toda completa*/
+  margin: 30px auto;
+  width: 80%;
+  overflow-y: auto;
+}
+.botella img { /* Esto es solo la imagen de la botella*/
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+}
+
+.botella div { /* Esto es los párrafos*/
+  float: left;
+  margin-top: 20px;
+  text-align: justify;
+  width: 50%;
+}
+
+/* Primera letra de los párrafos */
+.botella div::first-letter {
+  border-right: 1px solid #121867;
+  border-bottom: 1px solid #121867;
+  color: violet;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+
+/* Foto botellas fondo */
+.gallery {
+  margin: 20px auto;
+  overflow-y: auto;
+  width: 70%;
+}
+.gallery img {
+  float: left;
+  width: 20%;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #121867;
+  color: violet;
+  font-weight: bolder;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+footer address {
+  float: left;
+  width: 20%;
+}
+
+footer div {
+  float: left;
+  text-align: center;
+  width: 60%;
+}
+
+footer section {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+footer img {
+  width: 12%;
+}
